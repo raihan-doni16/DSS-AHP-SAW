@@ -27,8 +27,7 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            // dd($credentials); // Hapus atau komentari baris ini
-            return view('index');
+            return view('dashboard');
         }
 
         return back()->withErrors([

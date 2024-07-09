@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +23,11 @@ Route::get('/login', [AuthController::class, 'show'])->middleware('guest')->name
 Route::post('/login', [AuthController::class, 'login'])->middleware('guest')->name('login.perform');
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/', function () {
-        return view('index');
-    });
+    Route::get('/',[PageController::class, 'index'])->name('home');
+    Route::get('kriteria', [PageController::class, 'kriteria'])->name('kriteria');
+    Route::get('alternative', [PageController::class, 'alternative'])->name('alternative');
+    Route::get('matriks', [PageController::class, 'matriks'])->name('matriks');
+    Route::get('nilai', [PageController::class, 'nilai'])->name('nilai');
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 });
 
