@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+.font-family-karla { font-family: karla; }
+.bg-sidebar { background: #FFC700; }
+.active-nav-link { background: rgba(255,255,255, 0.25); }
+.nav-item:hover { background: rgba(255,255,255, 0.25); }
+.account-link:hover { background: rgba(255,255,255, 0.25); }
