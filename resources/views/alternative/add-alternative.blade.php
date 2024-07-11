@@ -1,9 +1,9 @@
 @extends('app')
 @section('content')
-<div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-md m-10" style="width: 500px">
-    <div class="px-6 py-4">
+<div class="max-w-md mx-auto bg-white rounded-lg overflow-y-scroll shadow-md m-10" style="width: 500px">
+    <div class="px-6 py-4" >
         <h2 class="text-lg font-bold mb-2">Edit Informasi Karyawan</h2>
-        <form action="{{route('alternative.post')}}" method="POST">
+        <form action="{{route('alternative.post')}}" method="POST" >
             @csrf
             <div class="mb-4">
                 <label for="nama_karyawan" class="block text-sm font-medium text-gray-700">Nama Karyawan</label>
