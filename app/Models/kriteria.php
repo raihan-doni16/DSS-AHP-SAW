@@ -11,7 +11,7 @@ class kriteria extends Model
     protected $table = 'kriteria';
     protected $primaryKey = 'id_kriteria';
 
-    protected $fillable = ['nama_kriteria', 'tipe'];
+    protected $fillable = ['nama_kriteria', 'tipe','bobot'];
 
     public function bobotKriteria()
     {

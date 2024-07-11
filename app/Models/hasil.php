@@ -11,10 +11,6 @@ class hasil extends Model
     protected $table = 'hasil';
     protected $primaryKey = 'id_hasil';
 
-    protected $fillable = ['id_karyawan', 'hasil'];
+    protected $fillable = ['nama_karyawan', 'hasil'];
 
-    public function karyawan()
-    {
-        return $this->belongsTo(Karyawan::class, 'id_karyawan');
-    }
 }

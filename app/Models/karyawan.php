@@ -11,7 +11,7 @@ class karyawan extends Model
     protected $table = 'karyawan';
     protected $primaryKey = 'id_karyawan';
 
-    protected $fillable = ['nama_karyawan'];
+    protected $fillable = ['nama_karyawan', 'divisi','bobot1','bobot2','bobot3'];
 
     public function nilaiKaryawan()
     {

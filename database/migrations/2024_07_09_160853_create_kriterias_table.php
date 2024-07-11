@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id('id_kriteria');
             $table->string('nama_kriteria');
             $table->string('tipe');
+            $table->string('bobot');
             $table->timestamps();
         });
     }

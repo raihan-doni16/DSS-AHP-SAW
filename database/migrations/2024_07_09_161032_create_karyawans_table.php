@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('karyawan', function (Blueprint $table) {
             $table->id('id_karyawan');
             $table->string('nama_karyawan');
+            $table->string('divisi');
+            $table->string('bobot1');
+            $table->string('bobot2');
+            $table->string('bobot3');
             $table->timestamps();
         });
     }
@@ -23,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('create_karyawan');
+        Schema::dropIfExists('karyawan');
     }
 };
