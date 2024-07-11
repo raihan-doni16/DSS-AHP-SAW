@@ -19,10 +19,9 @@
         @include('component.sidebar')
             <div class="w-full flex flex-col h-screen overflow-y-hidden">
                 @include('component.topbar')
-
-
-                @yield('content')
-
+         
+                    @yield('content')
+           
             </div>
 
     </div>

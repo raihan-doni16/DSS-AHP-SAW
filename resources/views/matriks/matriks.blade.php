@@ -1,11 +1,10 @@
 @extends('app')
 
 @section('content')
-<div class="page-wrapper overflow-y-auto h-screen p-2">
-    <h1 class="text-3xl text-black pb-6 m-2">Matriks</h1>
-
-    <h2 class="text-2xl text-black pb-4 m-2">Tabel Normalisasi Kriteria AHP</h2>
-    <div class="table-responsive mt-4">
+<div class="page-wrapper overflow-y-auto h-screen px-12 py-4">
+    <h1 class="text-3xl font-bold text-black">Matriks</h1>
+    <h2 class="text-2xl text-black">Tabel Normalisasi Kriteria AHP</h2>
+    <div class="table-responsive">
         <table class="table table-bordered table-hover table-striped">
             <thead class="thead-dark">
                 <tr>
@@ -31,8 +30,8 @@
             </tbody>
         </table>
     </div>
-    <h2 class="text-2xl text-black pb-4 m-2">Tabel Normalisasi Alternatif</h2>
-    <div class="table-responsive mt-4">
+    <h2 class="text-2xl text-black">Tabel Normalisasi Alternatif</h2>
+    <div class="table-responsive">
         <table class="table table-bordered table-hover table-striped">
             <thead class="thead-dark">
                 <tr>
@@ -56,8 +55,8 @@
             </tbody>
         </table>
     </div>
-    <h2 class="text-2xl text-black pb-4 m-2">Tabel Perankingan</h2>
-    <div class="table-responsive mt-4">
+    <h2 class="text-2xl text-black">Tabel Perankingan</h2>
+    <div class="table-responsive">
         <table class="table table-bordered table-hover table-striped">
             <thead class="thead-dark">
                 <tr>
