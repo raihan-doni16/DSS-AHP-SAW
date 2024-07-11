@@ -41,7 +41,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('kriteria')->insert([
             [
-                'nama_kriteria' => 'Pencapaian Target',
+                'nama_kriteria' => 'Kompetensi Teknis',
                 'tipe' => 'Benefit',
                 'bobot' => 7,
                 'created_at' => now(),
@@ -55,7 +55,7 @@ class DatabaseSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'nama_kriteria' => 'pengembangan diri',
+                'nama_kriteria' => 'Produktifitas',
                 'tipe' => 'Benefit',
                 'bobot' => 3,
                 'created_at' => now(),
